@@ -1,0 +1,155 @@
+
+.header {
+  background-color:rgba(0, 99, 247, 0.877);
+  align-content: center;
+  justify-content: center;
+  height: 13%;
+  width: 90%;
+  overflow: hidden;
+  display: flex;
+  border: solid black 1px;
+  margin: auto;
+  position: relative;
+}
+
+.redConnect {
+  color: red;
+}
+
+.yellowFour {
+  color: yellow;
+}
+
+.header > *{
+
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 70vh;
+  width: 55vw;
+  margin: auto;
+  background-color: black;
+  /* background-image: url("image1.jpg"); */
+  background-size: cover;
+
+}
+
+.container {
+  /* background-color: blue; */
+  background-color: transparent;
+  height: 85%;
+  width: 100%;
+  display: flex;
+  /* border: solid black 2px; */
+  position: relative;
+}
+
+.hoverChip {
+
+  height: 15%;
+  width: 100%;
+
+  /* background-color: lightgreen; */
+  /* border: solid red 2px; */
+  display: flex;
+  margin: auto;
+}
+
+.hoverSections {
+  padding-right: 10px;
+  padding-left : 10px;
+  border-radius: 50%;
+
+  height: 81%;
+  width: 8%;
+
+  /* border: solid black 1px; */
+  margin: auto;
+  display: flex;
+}
+
+.column {
+  height: 90%;
+  width: 14%;
+  /* background-color:blue; */
+  /* border: solid black 2px; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.column div {
+  height: 16%;
+  width: 60%;
+  background-color: rgb(207, 207, 207);
+  border: solid black 1px;
+  margin: auto;
+  border-radius: 50%;
+}
+/* .row {
+  position: relative;
+} */
+
+.resetButton {
+  font-size: 15px;
+  position: absolute;
+  right: 15%;
+  top: 25%;
+  background-color: grey;
+}
+
+.playerchange {
+  transition:transform 0.6s;
+  transform: scale(1.2);
+  z-index: 800;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.red {
+  background-color: red !important;
+}
+
+.yellow {
+  background-color: yellow !important;
+}
+
+.modal {
+  opacity: 0.95;
+  display: inline-block;
+  background-color: white;
+  height: 26%;
+  width: 25%;
+  position: absolute;
+  bottom: 40%;
+  text-align: center;
+  font-size: 40px;
+}
+
+.resetButtonOnModal {
+  font-size: 15px;
+  margin: auto;
+}
+
+.hide {
+  display: none;
+}
+
+.animate {
+  animation: drop-animation 740ms ;
+  position: relative !important;
+}
+@keyframes drop-animation {
+  from {
+    bottom: 600px;
+  }
+  to {
+    bottom: 0;
+  }
+}

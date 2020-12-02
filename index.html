@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Connect Four</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+  <!-- <header class="header card-panel #42a5f5">
+      <p class="connect flow-text red-text">Connect</p>
+      <p class="four flow-text yellow-text">Four!</p>
+  </header> -->
+
+  <header class="header">
+    <p class="logo redConnect">Connect</p>
+    <p class="logo yellowFour">Four!</p>
+
+    <button class="resetButton waves-effect waves-light btn-small ">Reset</button>
+  </header>
+
+  <!-- column hover flashing light -->
+  <div class="hoverChip">
+    <div class="hoverSections hover1"></div>
+    <div class="hoverSections hover2"></div>
+    <div class="hoverSections hover3"></div>
+    <div class="hoverSections hover4"></div>
+    <div class="hoverSections hover5"></div>
+    <div class="hoverSections hover6"></div>
+    <div class="hoverSections hover7"></div>
+  </div>
+
+
+<!-- game container -->
+  <div class="container">
+    <div class="column col-0 " id="0">
+      <div class="white"></div>
+      <div class="white"></div>
+      <div class="white"></div>
+      <div class="white"></div>
+      <div class="white"></div>
+      <div class="white"></div>
+    </div>
+    <div class="column col-1 " id="1">
+      <div class="white"></div>
+      <div  class="white"></div>
+      <div  class="white"></div>
+      <div  class="white"></div>
+      <div  class="white"></div>
+      <div  class="white"></div>
+    </div>
+    <div class="column col-2 " id="2">
+      <div  class="white"></div>
+      <div  class="white"></div>
+      <div class="white"></div>
+      <div  class="white"></div>
+      <div  class="white"></div>
+      <div  class="white"></div>
+    </div>
+    <div class="column col-3" id="3">
+      <div  class="white"></div>
+      <div  class="white"></div>
+      <div  class="white"></div>
+      <div  class="white"></div>
+      <div  class="white"></div>
+      <div  class="white"></div>
+    </div>
+    <div class="column col-4" id="4">
+      <div  class="white"></div>
+      <div  class="white"></div>
+      <div  class="white"></div>
+      <div  class="white" ></div>
+      <div  class="white"></div>
+      <div  class="white"></div>
+    </div>
+    <div class="column col-5" id="5">
+      <div  class="white"></div>
+      <div  class="white"></div>
+      <div  class="white"></div>
+      <div  class="white"></div>
+      <div class="white"></div>
+      <div  class="white"></div>
+    </div>
+    <div class="column col-6" id="6">
+      <div  class="white"></div>
+      <div  class="white"></div>
+      <div  class="white"></div>
+      <div  class="white"></div>
+      <div  class="white"></div>
+      <div  class="white"></div>
+    </div>
+
+  </div>
+  <div class="modal">
+    <p></p>
+    <button class="resetButtonOnModal waves-effect waves-light btn-small ">Click here to play again</button>
+  </div>
+  <footer>
+    <div class="row">
+          <div class="crd1 col s4 push-s1 card red">
+            <div class="card-content black-text">
+              <span class="card-title">
+                Player 1
+              </span>
+              <p> </p>
+            </div>
+          </div>
+
+          <!-- <button class="resetButton waves-effect waves-light btn-small blue">RESET</button> -->
+
+          <div class="crd2 col s4 push-s3 card yellow">
+            <div class="card-content black-text">
+              <span class="card-title">
+                Player 2
+              </span>
+              <p> </p>
+            </div>
+          </div>
+    </div>
+  </footer>
+</body>
+
+</html>
